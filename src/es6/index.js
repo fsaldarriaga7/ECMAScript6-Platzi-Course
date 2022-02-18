@@ -67,3 +67,12 @@ helloPromise()
 .then(() => console.log('hola'))
 .catch(error => console.log(error));
 
+// Otro ejemplo de Arrow Functions
+
+const square = num => num * num; //El primer num, indica el parámetro que le voy a pasar a la función
+
+let num3 = 3;
+num3 = square(num3);
+console.log(num3);
+
+
