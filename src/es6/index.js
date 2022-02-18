@@ -36,3 +36,34 @@ Acá va el segundo Lorem
 Incluso acá puede ir el tecero`;
 
 console.log (lorem2);
+
+let person = {
+    'name': 'Felipe',
+    'age': 31,
+    'country': 'co'
+}
+
+console.log(person.name, person.age);
+
+let {name,age,country} = person;
+
+console.log(name,age,country); //Es la misma asignación que person.name y person.age
+
+//Promises
+
+const helloPromise = () =>{
+    return new Promise((resolve,reject) => {
+        if(true){
+            resolve('Hey!');
+        }
+        else{
+            reject('Ups!');
+        };
+    });
+}
+
+helloPromise()
+.then(response => console.log(response))
+.then(() => console.log('hola'))
+.catch(error => console.log(error));
+
